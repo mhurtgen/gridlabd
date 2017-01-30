@@ -1,0 +1,3906 @@
+clock {
+	timezone EST+5EDT;
+	starttime '2011-01-01 00:15:00';
+	stoptime '2011-12-31 23:59:00';
+}
+
+module powerflow{
+	solver_method NR;
+	default_maximum_voltage_error 1e-6;
+	warning_undervoltage 0.99;
+	warning_overvoltage 1.01;
+	warning_underfrequency 49.5;
+	warning_overfrequency 50.5;
+	line_limits true;
+};
+
+module tape;
+
+object node {
+	phases "ABC";
+	name B-540;
+	bustype SWING;
+	voltage_A 15000;
+	voltage_B -12990+7500j;
+	voltage_C -12990-7500j;
+	nominal_voltage 15000;
+}
+
+object node {
+	phases "ABC";
+	name B-527;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-737;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-741;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-745;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-749;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-753;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-757;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-859;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-798;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-863;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-875;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-805;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-809;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-868;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-867;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-840;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-844;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-558;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-618;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-577;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-619;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-623;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-627;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-698;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-705;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-709;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-685;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-674;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-678;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-631;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-635;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-639;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-643;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-598;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-594;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-590;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object node {
+	phases "ABC";
+	name B-647;
+	bustype PQ;
+	voltage_A 230;
+	voltage_B -199.19+115.00j;
+	voltage_C -199.19-115.00j;
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-773;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-775;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-762;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-767;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-777;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-779;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-823;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-815;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-874;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-818;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-825;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-827;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-853;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-855;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-849;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-648;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-688;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-649;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-650;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-715;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-713;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-680;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-681;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-679;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-651;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-653;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-654;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-652;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-691;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-694;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object meter {
+	name B-655;
+	phases "ABC";
+	nominal_voltage 230;
+}
+
+object transformer_configuration {
+	name transformer_configuration_0;
+	connect_type DELTA_DELTA;
+	install_type PADMOUNT;
+	power_rating 1600000;
+	primary_voltage 15000;
+	secondary_voltage 230;
+	impedance 0.011+0.2j;
+}
+
+object transformer {
+	groupid transformermain;
+	configuration transformer_configuration_0;
+	name TR2-537;
+	from B-540;
+	to B-527;
+	nominal_voltage 15000;
+	phases ABC;
+}
+
+object line_spacing {
+	name line_spacing1;
+	distance_AB 0.088600;
+	distance_BC 0.088600;
+	distance_AC 0.088600;
+	distance_AN 0.000000;
+	distance_BN 0.000000;
+	distance_CN 0.000000;
+}
+object line_spacing {
+	name line_spacing2;
+	distance_AB 0.041400;
+	distance_BC 0.041400;
+	distance_AC 0.041400;
+	distance_AN 0.000000;
+	distance_BN 0.000000;
+	distance_CN 0.000000;
+}
+object line_spacing {
+	name line_spacing3;
+	distance_AB 0.106500;
+	distance_BC 0.106500;
+	distance_AC 0.106500;
+	distance_AN 0.000000;
+	distance_BN 0.000000;
+	distance_CN 0.000000;
+}
+object line_configuration{
+	name lineconfig_1;
+	spacing line_spacing1;
+	z11 2.94510000+0.75800000j;
+	z22 2.94510000+0.75800000j;
+	z33 2.94510000+0.75800000j;
+}
+object line_configuration{
+	name lineconfig_2;
+	spacing line_spacing2;
+	z11 0.51499000+0.39000000j;
+	z22 0.51499000+0.39000000j;
+	z33 0.51499000+0.39000000j;
+}
+object line_configuration{
+	name lineconfig_3;
+	spacing line_spacing3;
+	z11 0.33150000+0.50000000j;
+	z22 0.33150000+0.50000000j;
+	z33 0.33150000+0.50000000j;
+}
+object underground_line{
+	phases "ABC";
+	name L-734;
+	from B-773;
+	to B-737;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-738;
+	from B-741;
+	to B-775;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-742;
+	from B-745;
+	to B-762;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-746;
+	from B-749;
+	to B-767;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-750;
+	from B-753;
+	to B-777;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-754;
+	from B-757;
+	to B-779;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-795;
+	from B-798;
+	to B-823;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-799;
+	from B-815;
+	to B-863;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-871;
+	from B-875;
+	to B-874;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-802;
+	from B-818;
+	to B-805;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-806;
+	from B-825;
+	to B-809;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-810;
+	from B-827;
+	to B-868;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-834;
+	from B-867;
+	to B-853;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-837;
+	from B-855;
+	to B-840;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-841;
+	from B-849;
+	to B-844;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-615;
+	from B-618;
+	to B-648;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-555;
+	from B-577;
+	to B-688;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-620;
+	from B-623;
+	to B-649;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-624;
+	from B-627;
+	to B-650;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-699;
+	from B-715;
+	to B-705;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-706;
+	from B-709;
+	to B-713;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-668;
+	from B-685;
+	to B-680;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-671;
+	from B-674;
+	to B-681;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-675;
+	from B-678;
+	to B-679;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-628;
+	from B-631;
+	to B-651;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-632;
+	from B-635;
+	to B-653;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-636;
+	from B-639;
+	to B-654;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-640;
+	from B-643;
+	to B-652;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-552;
+	from B-598;
+	to B-691;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-549;
+	from B-590;
+	to B-694;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-644;
+	from B-647;
+	to B-655;
+	length 82.01;
+	configuration lineconfig_1;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-731;
+	from B-737;
+	to B-741;
+	length 400.2088;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-728;
+	from B-741;
+	to B-745;
+	length 196.824;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-725;
+	from B-745;
+	to B-749;
+	length 213.226;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-722;
+	from B-749;
+	to B-753;
+	length 328.04;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-719;
+	from B-753;
+	to B-757;
+	length 3.2804;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-716;
+	from B-757;
+	to B-527;
+	length 196.824;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-792;
+	from B-859;
+	to B-798;
+	length 393.648;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-789;
+	from B-798;
+	to B-863;
+	length 754.492;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-860;
+	from B-863;
+	to B-875;
+	length 866.142;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-786;
+	from B-863;
+	to B-805;
+	length 226.3476;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-783;
+	from B-805;
+	to B-809;
+	length 104.9728;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-780;
+	from B-809;
+	to B-868;
+	length 16.402;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-864;
+	from B-868;
+	to B-867;
+	length 180.422;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-831;
+	from B-867;
+	to B-840;
+	length 400.2088;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-828;
+	from B-840;
+	to B-844;
+	length 196.824;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-531;
+	from B-558;
+	to B-618;
+	length 852.904;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-543;
+	from B-618;
+	to B-577;
+	length 98.412;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-574;
+	from B-577;
+	to B-619;
+	length 213.226;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-559;
+	from B-619;
+	to B-623;
+	length 3.2804;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-562;
+	from B-623;
+	to B-627;
+	length 49.206;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-578;
+	from B-627;
+	to B-698;
+	length 459.256;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-695;
+	from B-698;
+	to B-705;
+	length 1640.2;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-702;
+	from B-705;
+	to B-709;
+	length 295.236;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-682;
+	from B-698;
+	to B-685;
+	length 387.0872;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-656;
+	from B-685;
+	to B-674;
+	length 164.02;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-659;
+	from B-674;
+	to B-678;
+	length 196.824;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-565;
+	from B-698;
+	to B-631;
+	length 72.178;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-581;
+	from B-631;
+	to B-635;
+	length 32.804;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-568;
+	from B-635;
+	to B-639;
+	length 114.814;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-571;
+	from B-639;
+	to B-643;
+	length 82.01;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-595;
+	from B-643;
+	to B-598;
+	length 164.02;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-591;
+	from B-598;
+	to B-594;
+	length 65.608;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-584;
+	from B-594;
+	to B-590;
+	length 65.608;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-587;
+	from B-590;
+	to B-647;
+	length 16.402;
+	configuration lineconfig_2;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-856;
+	from B-527;
+	to B-859;
+	length 213.226;
+	configuration lineconfig_3;
+}
+
+object underground_line{
+	phases "ABC";
+	name L-528;
+	from B-527;
+	to B-558;
+	length 213.25;
+	configuration lineconfig_3;
+}
+
+object load {
+	name L-769;
+	parent B-779;
+	object player {
+		property constant_power_A;
+		file L-769.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-769.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-769.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-925;
+	parent B-779;
+	object player {
+		property constant_power_A;
+		file L-925.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-925.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-925.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-768;
+	parent B-777;
+	object player {
+		property constant_power_A;
+		file L-768.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-768.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-768.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-917;
+	parent B-777;
+	object player {
+		property constant_power_A;
+		file L-917.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-917.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-917.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-764;
+	parent B-767;
+	object player {
+		property constant_power_A;
+		file L-764.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-764.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-764.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-763;
+	parent B-767;
+	object player {
+		property constant_power_A;
+		file L-763.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-763.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-763.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-759;
+	parent B-762;
+	object player {
+		property constant_power_A;
+		file L-759.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-759.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-759.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-758;
+	parent B-762;
+	object player {
+		property constant_power_A;
+		file L-758.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-758.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-758.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-770;
+	parent B-775;
+	object player {
+		property constant_power_A;
+		file L-770.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-770.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-770.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-909;
+	parent B-775;
+	object player {
+		property constant_power_A;
+		file L-909.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-909.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-909.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-771;
+	parent B-773;
+	object player {
+		property constant_power_A;
+		file L-771.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-771.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-771.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-896;
+	parent B-773;
+	object player {
+		property constant_power_A;
+		file L-896.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-896.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-896.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-821;
+	parent B-823;
+	object player {
+		property constant_power_A;
+		file L-821.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-821.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-821.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-933;
+	parent B-823;
+	object player {
+		property constant_power_A;
+		file L-933.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-933.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-933.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-813;
+	parent B-815;
+	object player {
+		property constant_power_A;
+		file L-813.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-813.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-813.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-941;
+	parent B-815;
+	object player {
+		property constant_power_A;
+		file L-941.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-941.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-941.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-869;
+	parent B-874;
+	object player {
+		property constant_power_A;
+		file L-869.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-869.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-869.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-949;
+	parent B-874;
+	object player {
+		property constant_power_A;
+		file L-949.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-949.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-949.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-816;
+	parent B-818;
+	object player {
+		property constant_power_A;
+		file L-816.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-816.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-816.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-957;
+	parent B-818;
+	object player {
+		property constant_power_A;
+		file L-957.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-957.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-957.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-819;
+	parent B-825;
+	object player {
+		property constant_power_A;
+		file L-819.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-819.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-819.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-962;
+	parent B-825;
+	object player {
+		property constant_power_A;
+		file L-962.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-962.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-962.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-820;
+	parent B-827;
+	object player {
+		property constant_power_A;
+		file L-820.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-820.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-820.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-973;
+	parent B-827;
+	object player {
+		property constant_power_A;
+		file L-973.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-973.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-973.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-851;
+	parent B-853;
+	object player {
+		property constant_power_A;
+		file L-851.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-851.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-851.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-981;
+	parent B-853;
+	object player {
+		property constant_power_A;
+		file L-981.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-981.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-981.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-850;
+	parent B-855;
+	object player {
+		property constant_power_A;
+		file L-850.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-850.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-850.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-845;
+	parent B-855;
+	object player {
+		property constant_power_A;
+		file L-845.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-845.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-845.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-846;
+	parent B-849;
+	object player {
+		property constant_power_A;
+		file L-846.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-846.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-846.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-989;
+	parent B-849;
+	object player {
+		property constant_power_A;
+		file L-989.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-989.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-989.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-599;
+	parent B-648;
+	object player {
+		property constant_power_A;
+		file L-599.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-599.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-599.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-997;
+	parent B-648;
+	object player {
+		property constant_power_A;
+		file L-997.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-997.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-997.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-686;
+	parent B-688;
+	object player {
+		property constant_power_A;
+		file L-686.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-686.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-686.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-536;
+	parent B-688;
+	object player {
+		property constant_power_A;
+		file L-536.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-536.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-536.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-601;
+	parent B-649;
+	object player {
+		property constant_power_A;
+		file L-601.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-601.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-601.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-1002;
+	parent B-649;
+	object player {
+		property constant_power_A;
+		file L-1002.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-1002.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-1002.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-603;
+	parent B-650;
+	object player {
+		property constant_power_A;
+		file L-603.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-603.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-603.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-1013;
+	parent B-650;
+	object player {
+		property constant_power_A;
+		file L-1013.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-1013.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-1013.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-711;
+	parent B-713;
+	object player {
+		property constant_power_A;
+		file L-711.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-711.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-711.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-1041;
+	parent B-713;
+	object player {
+		property constant_power_A;
+		file L-1041.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-1041.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-1041.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-662;
+	parent B-680;
+	object player {
+		property constant_power_A;
+		file L-662.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-662.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-662.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-1049;
+	parent B-680;
+	object player {
+		property constant_power_A;
+		file L-1049.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-1049.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-1049.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-664;
+	parent B-681;
+	object player {
+		property constant_power_A;
+		file L-664.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-664.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-664.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-1054;
+	parent B-681;
+	object player {
+		property constant_power_A;
+		file L-1054.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-1054.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-1054.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-666;
+	parent B-679;
+	object player {
+		property constant_power_A;
+		file L-666.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-666.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-666.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-1059;
+	parent B-679;
+	object player {
+		property constant_power_A;
+		file L-1059.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-1059.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-1059.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-605;
+	parent B-651;
+	object player {
+		property constant_power_A;
+		file L-605.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-605.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-605.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-1073;
+	parent B-651;
+	object player {
+		property constant_power_A;
+		file L-1073.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-1073.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-1073.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-607;
+	parent B-653;
+	object player {
+		property constant_power_A;
+		file L-607.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-607.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-607.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-1078;
+	parent B-653;
+	object player {
+		property constant_power_A;
+		file L-1078.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-1078.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-1078.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-609;
+	parent B-654;
+	object player {
+		property constant_power_A;
+		file L-609.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-609.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-609.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-1083;
+	parent B-654;
+	object player {
+		property constant_power_A;
+		file L-1083.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-1083.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-1083.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-611;
+	parent B-652;
+	object player {
+		property constant_power_A;
+		file L-611.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-611.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-611.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-1097;
+	parent B-652;
+	object player {
+		property constant_power_A;
+		file L-1097.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-1097.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-1097.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-689;
+	parent B-691;
+	object player {
+		property constant_power_A;
+		file L-689.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-689.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-689.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-634;
+	parent B-691;
+	object player {
+		property constant_power_A;
+		file L-634.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-634.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-634.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-692;
+	parent B-694;
+	object player {
+		property constant_power_A;
+		file L-692.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-692.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-692.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-542;
+	parent B-694;
+	object player {
+		property constant_power_A;
+		file L-542.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-542.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-542.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+object load {
+	name L-613;
+	parent B-655;
+	object player {
+		property constant_power_A;
+		file L-613.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-613.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-613.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+
+object load {
+	name L-1105;
+	parent B-655;
+	object player {
+		property constant_power_A;
+		file L-1105.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-1105.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-1105.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+
+object load {
+	name L-710;
+	parent B-715;
+	object player {
+		property constant_power_A;
+		file L-710.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-710.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-710.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+
+object load {
+	name L-1033;
+	parent B-715;
+	object player {
+		property constant_power_A;
+		file L-1033.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_B;
+		file L-1033.player;
+		loop 1;
+	};
+
+	object player {
+		property constant_power_C;
+		file L-1033.player;
+		loop 1;
+	};
+
+	power_pf_A 1;
+	current_pf_A 1;
+	impedance_pf_A 1;
+	power_fraction_A 0.33;
+	current_fraction_A 0.33;
+	impedance_fraction_A 0.33;
+	power_pf_B 1;
+	current_pf_B 1;
+	impedance_pf_B 1;
+	power_fraction_B 0.33;
+	current_fraction_B 0.33;
+	impedance_fraction_B 0.33;
+	power_pf_C 1;
+	current_pf_C 1;
+	impedance_pf_C 1;
+	power_fraction_C 0.33;
+	current_fraction_C 0.33;
+	impedance_fraction_C 0.33;
+nominal_voltage 230;
+
+}
+
+
+object collector {
+     group "class=underground_line";
+     property sum(power_losses_A.real),sum(power_losses_A.imag),sum(power_losses_B.real),sum(power_losses_B.imag),sum(power_losses_C.real),sum(power_losses_C.imag);
+     interval 900;
+     limit 702720;
+     file power_losses_2.csv;
+}
+
+
+object voltdump {
+	mode polar;
+	file voltages.csv;
+}
+
+
+object currdump {
+	mode polar;
+	filename currents.csv;
+}
+
+object recorder {
+	parent TR2-537;
+	property "power_out_A.real,power_out_A.imag,power_out_B.real,power_out_B.imag,power_out_C.real,power_out_C.imag";
+	limit 702720;
+	interval 900;
+	file power_out_tr_2.csv;
+}
+
+object multi_recorder {
+	property B-737:voltage_A.real, B-737:voltage_A.imag, B-844:voltage_A.real, B-844:voltage_A.imag, B-709:voltage_A.real, B-709:voltage_A.imag, B-647:voltage_A.real, B-647:voltage_A.imag,B-678:voltage_A.real, B-678:voltage_A.imag;
+	file "voltages_sel.csv";
+	interval 900;
+	limit 702720;
+}
+
+object multi_recorder {
+	property L-716:current_in_A.real, L-716:current_in_A.imag, L-856:current_in_A.real, L-856:current_in_A.imag,L-528:current_in_A.real, L-528:current_in_A.imag;
+	file "currents_sel.csv";
+	interval 900;
+	limit 702720;
+}
+
